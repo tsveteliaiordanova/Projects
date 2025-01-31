@@ -1,0 +1,15 @@
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+  }
+  
+  .bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("384560566_6412819298844411_2702374386069757535_n.png");
+    min-height: 75%;
+  }
+  
+  .menu {
+    display: none;
+  }
