@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>fiera</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="app.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+ <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Tangerine">
+
+ <link rel="stylesheet"
+ href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+
+
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+</script>
+
+
+   
+<style>
+
+body {
+    background: white;
+    font-size: 1rem;
+  }
+  
+  .content {
+    max-width: 300px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+  }
+  .center {
+            text-align: center;
+        }
+
+        .center img {
+            display: block;
+            margin: 0 auto;
+        }
+  .accordion {
+background-color: #eee;
+color: #444;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+transition: 0.4s;
+}
+
+.active, .accordion:hover {
+background-color: #ccc;
+}
+
+.accordion:after {
+content: '\002B';
+color: #777;
+font-weight: bold;
+float: right;
+margin-left: 5px;
+}
+
+.active:after {
+content: "\2212";
+}
+
+.panel {
+padding: 0 18px;
+background-color: white;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+}
+#example2 {
+border: 1px solid black;
+background: url(dbnqxo1-c476cf75-9a70-4c06-9e2b-549c61201019.png);
+background-repeat: no-repeat;
+padding: 15px;
+
+}
+
+* {
+box-sizing: border-box;
+}
+
+.column {
+float: left;
+width: 33.33%;
+padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+
+.card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+max-width: 300px;
+margin: auto;
+text-align: center;
+font-family: arial;
+
+}
+
+.price {
+color: grey;
+font-size: 22px;
+}
+
+.card button {
+border: none;
+outline: 0;
+padding: 12px;
+color: white;
+background-color: #000;
+text-align: center;
+cursor: pointer;
+width: 100%;
+font-size: 18px;
+}
+
+.card button:hover {
+opacity: 0.7;
+}
+
+div.b {
+position: absolute;
+right: 0;
+
+} 
+
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container-sm-height {
+    display: table;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .row-sm-height {
+    display: table-row;
+  }
+  .col-sm-height {
+    display: table-cell;
+    float: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-md-height {
+    display: table;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .row-md-height {
+    display: table-row;
+  }
+  .col-md-height {
+    display: table-cell;
+    float: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-lg-height {
+    display: table;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .row-lg-height {
+    display: table-row;
+  }
+  .col-lg-height {
+    display: table-cell;
+    float: none;
+  }
+}
+.footer-heading {
+    letter-spacing: 2px;
+}
+
+.footer-link a {
+    color: #acacac;
+    line-height: 40px;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+.footer-link a:hover {
+    color: #1bbc9b;
+}
+
+.contact-info {
+    color: #acacac;
+    font-size: 14px;
+}
+
+
+
+.footer-alt {
+    color: #acacac;
+}
+
+.footer-heading {
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.footer-heading:after {
+    content: '';
+    width: 25px;
+    border-bottom: 1px solid #FFF;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    border-bottom: 1px solid white;
+}
+
+
+</style>
+
+</head>
+
+<body>
+ 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a href="#"><img src="logo1.png" width="150" height="100" alt="logo"></a>
+
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">PRODUCTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT US</a>
+            </li>
+        </ul>
+
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2"
+                   type="search"
+                   placeholder="Search"
+                   aria-label="Search" />
+            <button class="btn btn-light my-2 my-sm-0"
+                    type="submit">
+                Search
+            </button>
+        </form>
+        
+    </div>
+</nav>
+
+<div id="example2">
+<div class="content">
+   
+    
+    <h1>FIÈRA 24-Hour </h1>
+    <h1> Face Cream with Apple Stem Cells</h1>
+     
+    <div class="b">
+        <div class="card">
+           
+            <h4>$34.97</h4><br>
+         
+            <p>No Import Fees Deposit & $9.89 Shipping to Bulgaria Details 
+                Delivery Wednesday, November 22</p><br>
+                <a href="file:///C:/Users/Lenovo/Desktop/fiera/buyingform.html" ><button>Add to card</button> </a>
+          </div>
+       </div>
+
+    <img src="619bbkCUpeL._SX466_.jpg" width="400" height="400"/>
+    <h4>Price: $34.97</h4><br>
+    
+   
+    <h4>About this item</h4>
+    <button class="accordion">3-IN-1 MOISTURIZING CREAM</button>
+    <div class="panel">
+      <h4> Fièra Moisturizer contains Swiss Apple Stem Cells, Hyaluronic Acid, Sea Buckthorn Oil, Vitamin E.
+         This skin-tightening face cream helps improve wrinkles, dark spots, and under eye dark circles while 
+         leaving your skin feeling silky smooth.</h4>
+    </div>
+    
+    <button class="accordion">PLANT-BASED STEM CELLS</button>
+    <div class="panel">
+      <h4>These powerful swiss apple stem cells have been scientifically proven to promote skin cell 
+        regeneration. They correct existing signs of aging while delaying further damage as well. The only skin-tightening 
+        face cream of its kind which both corrects and delays the signs of aging in mature skin.</h4>
+    </div>
+ 
+    <button class="accordion">Star Ingredients </button>
+    <div class="panel">
+        <li class="nav-item">
+            <h4>Swiss Apple Stem Cells, Hyaluronic Acid, Sea Buckthorn Oil</h4>
+        </li>
+        <li class="nav-item">
+            <h4>Collagen, Hyaluronic Acid, Vitamin C</h4>
+        </li>
+        <li class="nav-item">
+          <h4>Bakuchiol, Flax Seed, Licorice Root</h4>
+        </li>
+        <li class="nav-item">
+            <h4>Hyaluronic Acid, Glycolic Acid, Squalane</h4>
+          </li>
+          <li class="nav-item">
+            <h4>Vitamin C, Citrus Stem Cells, Caribbean Orange Oil</h4>
+          </li>
+          <li class="nav-item">
+            <h4>Hyaluronic Acid, Glycolic Acid, Squalane, Sea Buckthorn Oil</h4>
+          </li>
+    </ul>
+
+    </div>
+
+    <button class="accordion">FORMULATED FOR MATURE SKIN</button>
+    <div class="panel">
+      <h4>Skincare that actually works because it was designed for 40+ year-old skin. 
+        This formula contains scientifically proven ingredients to help combat the most common signs of
+         aging such as dryness, dark spots, or wrinkles. Cruelty free, No added parabens or GMOs.</h4>
+    </div>
+        </div>
+        <h1>From the brand</h1>
+        <img src="ccbdd38d-1f13-4c8f-9ce1-42c89f4fa5fb.__CR0,0,1465,625_PT0_SX1464_V1___.jfif"/>
+        
+        <h1>Product Description</h1>
+
+        <div class="center">
+              <img src="cf9072e6-55e2-4f10-a22e-6ae11044fff0.__CR0,0,970,600_PT0_SX970_V1___.jfif"><br>
+        </div>
+        <div class="center">
+            
+              <img src="74f64854-c0cc-4e96-8e40-13b4cd82ef87.__CR0,0,970,600_PT0_SX970_V1___.jfif" ><br>
+        </div>
+        <div class="center">
+        
+              <img src="8e184382-d64c-4289-b5fa-e9f4d3858d85.__CR0,0,970,600_PT0_SX970_V1___.jfif" ><br>
+        </div>
+          
+  <script>
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+  </script>
+ <footer class="section bg-footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-3">
+              <div class="">
+                  <h6 class="footer-heading text-uppercase text-white">Information</h6>
+                  <ul class="list-unstyled footer-link mt-4">
+                      <li><a href="">Pages</a></li>
+                      <li><a href="">Our Team</a></li>
+                      <li><a href="">Feuchers</a></li>
+                      <li><a href="">Pricing</a></li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="col-lg-3">
+              <div class="">
+                  <h6 class="footer-heading text-uppercase text-white">Ressources</h6>
+                  <ul class="list-unstyled footer-link mt-4">
+                      <li><a href="">Monitoring Grader </a></li>
+                      <li><a href="">Video Tutorial</a></li>
+                      <li><a href="">Term &amp; Service</a></li>
+                      <li><a href="">Zeeko API</a></li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="col-lg-2">
+              <div class="">
+                  <h6 class="footer-heading text-uppercase text-white">Help</h6>
+                  <ul class="list-unstyled footer-link mt-4">
+                      <li><a href="">Sign Up </a></li>
+                      <li><a href="">Login</a></li>
+                      <li><a href="">Terms of Services</a></li>
+                      <li><a href="">Privacy Policy</a></li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="col-lg-4">
+              <div class="">
+                  <h6 class="footer-heading text-uppercase text-white">Contact Us</h6>
+                  <p class="contact-info mt-4">Contact us if need help withanything</p>
+                  <p class="contact-info">+01 123-456-7890</p>
+                  <div class="mt-5">
+                      <ul class="list-inline">
+                          <li class="list-inline-item"><a href="#"><i class="fab facebook footer-social-icon fa-facebook-f"></i></i></a></li>
+                          <li class="list-inline-item"><a href="#"><i class="fab twitter footer-social-icon fa-twitter"></i></i></a></li>
+                          <li class="list-inline-item"><a href="#"><i class="fab google footer-social-icon fa-google"></i></i></a></li>
+                          <li class="list-inline-item"><a href="#"><i class="fab apple footer-social-icon fa-apple"></i></i></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+
+  <div class="text-center mt-5">
+      <p class="footer-alt mb-0 f-14">Tsvetelia Iordaova</p>
+  </div>
+</footer>
+</body>
+
+</html>
